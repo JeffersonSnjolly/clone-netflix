@@ -1,0 +1,91 @@
+:root{
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Elementos base*/
+body{
+background-color: var(--preto);
+color: azure;
+font-family: 'Times New Roman', Times, serif;
+}
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.logo{
+    color: var(--vermelho);
+    font-size: 200%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 8px;
+    margin-bottom: 10px;
+}
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+header nav a:hover{
+    color: azure;
+}
+/*Filme Principal*/
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/houseofcards_fundo2.jpg');
+    height: 400px;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 2%;
+}
+.titulo{
+    font-size: 45px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 10%;
+}
+.botao{
+    background-color: rgba(2, 2, 2, 0.5);
+    padding: 2%;
+    margin: .6%;
+    font-size: 65%;
+    border-radius: 3px;
+    color: azure;
+    border: none;
+    cursor: pointer;
+    transition: 0.8s ease all;
+}
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+.botao i{
+    padding-right: 8px;
+}
+.container{
+    margin-left: 20px;
+}
+.filme-principal .container{
+    width: 60%;
+}
+.box-img{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.carrosel-filmes{
+    margin-top: 5px;
+
+}
